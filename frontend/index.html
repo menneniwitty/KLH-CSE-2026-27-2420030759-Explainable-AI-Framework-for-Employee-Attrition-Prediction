@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Explainable AI - Employee Attrition Prediction
+    </title>
+
+    <link rel="stylesheet"
+        href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+            Explainable AI
+        </div>
+
+        <nav>
+            <a href="#dashboard">
+                Dashboard
+            </a>
+
+            <a href="#prediction">
+                Prediction
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero"
+        id="dashboard">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                ARTIFICIAL INTELLIGENCE
+            </p>
+
+            <h1>
+                Employee Attrition
+                Prediction
+            </h1>
+
+            <p>
+                Predict employee attrition risk using
+                Machine Learning and understand the
+                prediction using Explainable AI.
+            </p>
+
+            <a href="#prediction"
+                class="hero-button">
+                Start Prediction
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- DASHBOARD -->
+
+    <section class="dashboard">
+
+        <h2>
+            HR Analytics Dashboard
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+                    1,470
+                </h3>
+
+                <p>
+                    Total Employees
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    237
+                </h3>
+
+                <p>
+                    Attrition Cases
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    16.1%
+                </h3>
+
+                <p>
+                    Attrition Rate
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    35
+                </h3>
+
+                <p>
+                    Dataset Features
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PREDICTION -->
+
+    <section class="prediction-section"
+        id="prediction">
+
+        <div class="prediction-container">
+
+            <h2>
+                Employee Attrition Prediction
+            </h2>
+
+            <p class="section-description">
+                Enter employee information to predict
+                attrition risk and understand the
+                factors influencing the prediction.
+            </p>
+
+
+            <form id="prediction-form">
+
+
+                <!-- EMPLOYEE INFORMATION -->
+
+                <div class="form-section">
+
+                    <h3>
+                        Employee Information
+                    </h3>
+
+
+                    <div class="form-grid">
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Age
+                            </label>
+
+                            <input
+                                type="number"
+                                id="Age"
+                                name="Age"
+                                min="18"
+                                max="70"
+                                value="30"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Gender
+                            </label>
+
+                            <select
+                                id="Gender"
+                                name="Gender"
+                                required>
+
+                                <option value="Male">
+                                    Male
+                                </option>
+
+                                <option value="Female">
+                                    Female
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Marital Status
+                            </label>
+
+                            <select
+                                id="MaritalStatus"
+                                name="MaritalStatus"
+                                required>
+
+                                <option value="Single">
+                                    Single
+                                </option>
+
+                                <option value="Married">
+                                    Married
+                                </option>
+
+                                <option value="Divorced">
+                                    Divorced
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Distance From Home
+                            </label>
+
+                            <input
+                                type="number"
+                                id="DistanceFromHome"
+                                name="DistanceFromHome"
+                                min="1"
+                                max="30"
+                                value="5"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JOB INFORMATION -->
+
+                <div class="form-section">
+
+                    <h3>
+                        Job Information
+                    </h3>
+
+
+                    <div class="form-grid">
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Department
+                            </label>
+
+                            <select
+                                id="Department"
+                                name="Department"
+                                required>
+
+                                <option value="Research & Development">
+                                    Research & Development
+                                </option>
+
+                                <option value="Sales">
+                                    Sales
+                                </option>
+
+                                <option value="Human Resources">
+                                    Human Resources
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Job Role
+                            </label>
+
+                            <select
+                                id="JobRole"
+                                name="JobRole"
+                                required>
+
+                                <option value="Sales Executive">
+                                    Sales Executive
+                                </option>
+
+                                <option value="Research Scientist">
+                                    Research Scientist
+                                </option>
+
+                                <option value="Laboratory Technician">
+                                    Laboratory Technician
+                                </option>
+
+                                <option value="Manufacturing Director">
+                                    Manufacturing Director
+                                </option>
+
+                                <option value="Healthcare Representative">
+                                    Healthcare Representative
+                                </option>
+
+                                <option value="Manager">
+                                    Manager
+                                </option>
+
+                                <option value="Sales Representative">
+                                    Sales Representative
+                                </option>
+
+                                <option value="Research Director">
+                                    Research Director
+                                </option>
+
+                                <option value="Human Resources">
+                                    Human Resources
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Monthly Income
+                            </label>
+
+                            <input
+                                type="number"
+                                id="MonthlyIncome"
+                                name="MonthlyIncome"
+                                min="1000"
+                                value="5000"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Years At Company
+                            </label>
+
+                            <input
+                                type="number"
+                                id="YearsAtCompany"
+                                name="YearsAtCompany"
+                                min="0"
+                                max="40"
+                                value="5"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- WORK ENVIRONMENT -->
+
+                <div class="form-section">
+
+                    <h3>
+                        Work Environment
+                    </h3>
+
+
+                    <div class="form-grid">
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Job Satisfaction
+                            </label>
+
+                            <select
+                                id="JobSatisfaction"
+                                name="JobSatisfaction"
+                                required>
+
+                                <option value="1">
+                                    1 - Low
+                                </option>
+
+                                <option value="2">
+                                    2 - Medium
+                                </option>
+
+                                <option value="3"
+                                    selected>
+                                    3 - High
+                                </option>
+
+                                <option value="4">
+                                    4 - Very High
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Environment Satisfaction
+                            </label>
+
+                            <select
+                                id="EnvironmentSatisfaction"
+                                name="EnvironmentSatisfaction"
+                                required>
+
+                                <option value="1">
+                                    1 - Low
+                                </option>
+
+                                <option value="2">
+                                    2 - Medium
+                                </option>
+
+                                <option value="3"
+                                    selected>
+                                    3 - High
+                                </option>
+
+                                <option value="4">
+                                    4 - Very High
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Overtime
+                            </label>
+
+                            <select
+                                id="OverTime"
+                                name="OverTime"
+                                required>
+
+                                <option value="No">
+                                    No
+                                </option>
+
+                                <option value="Yes">
+                                    Yes
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Work Life Balance
+                            </label>
+
+                            <select
+                                id="WorkLifeBalance"
+                                name="WorkLifeBalance"
+                                required>
+
+                                <option value="1">
+                                    1 - Low
+                                </option>
+
+                                <option value="2"
+                                    selected>
+                                    2 - Good
+                                </option>
+
+                                <option value="3">
+                                    3 - Better
+                                </option>
+
+                                <option value="4">
+                                    4 - Best
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <div class="button-area">
+
+                    <button
+                        type="submit"
+                        id="predict-btn">
+
+                        Predict Attrition Risk
+
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <!-- RESULT -->
+
+            <div id="prediction-result"
+                class="result-container">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about"
+        id="about">
+
+        <h2>
+            About Explainable AI
+        </h2>
+
+        <p>
+            This system uses XGBoost Machine Learning
+            to predict employee attrition.
+            SHAP Explainable AI is used to show
+            which employee features increase or
+            decrease the predicted attrition risk.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Explainable AI Framework for Employee
+            Attrition Prediction
+        </p>
+
+        <p>
+            Machine Learning + XGBoost + SHAP
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
